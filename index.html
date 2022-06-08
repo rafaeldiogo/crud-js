@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud operações</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+            <form autocomplete="off" onsubmit="onFormSubmit()">
+              <div>
+                <label for="codigoProduto">Código do produto</label>
+                <input type="text" name="codigoProduto" id="codigoProduto" />
+              </div>
+              <div>
+                <label for="nomeProduto">Nome do produto</label>
+                <input type="text" name="nomeProduto" id="nomeProduto" />
+              </div>
+              <div>
+                <label for="quantidadeProduto">Quantidade</label>
+                <input
+                  type="number"
+                  name="quantidadeProduto"
+                  id="quantidadeProduto"
+                />
+              </div>
+              <div>
+                <label for="precoProduto">Preço</label>
+                <input type="number" name="precoProduto" id="precoProduto" />
+              </div>
+              <div class="form_action--button">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Resetar" />
+              </div>
+            </form>
+            <td>
+              <table class="list" id="storeList">
+                <thead>
+                  <tr>
+                    <th>Cód.Produto</th>
+                    <th>NomeProduto</th>
+                    <th>Qtd</th>
+                    <th>Preço</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+              </table>
+            </td>
+        </td>
+      </tr>
+    </table>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
